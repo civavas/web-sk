@@ -2,148 +2,152 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=500, initial-scale=1">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <style>
-    html,
-    body {
-      width: 100vw;
-      height: 100vh;
-      background-color: rgb(248, 248, 248);
-	  color: black;
-    }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=500, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(248, 248, 248);
+            font-family: "Nunito", sans-serif;
+            color: rgb(06, 40, 70);
+        }
 
-    .rh-text-hello {
-      font-size: 20vmin;
-      margin-bottom: 0;
-      line-height: 0.5;
-      padding-top: 25vmin;
-      font-family: "Sacramento", sans-serif;
-    }
+        .rh-text-hello {
+            font-size: 20vmin;
+            margin-bottom: 0;
+            line-height: 0.5;
+            padding-top: 25vmin;
+            font-family: "Sacramento", sans-serif;
+        }
 
-    .rh-text-dot {
-      font-size: 20vmin;
-      font-family: "Sacramento", sans-serif;
-      line-height: 0;
-      letter-spacing: 0;
-    }
+        .rh-text-dot {
+            font-size: 20vmin;
+            font-family: "Sacramento", sans-serif;
+            line-height: 0;
+            letter-spacing: 0;
+        }
 
-    .rh-text-enjoy {
-      font-size: 17vmin;
-      font-family: "Anton", sans-serif;
-      color: rgb(248, 248, 248);
-    }
+        .rh-text-enjoy {
+            font-size: 17vmin;
+            font-family: "Anton", sans-serif;
+            color: rgb(248, 248, 248);
+        }
 
-    .rh-text-void {
+        .rh-text-void {
+            font-size: 5vmin;
+            line-height: 0.5;
+            color: rgb(188, 188, 188);
+        }
 
-      font-size: 5vmin;
-      line-height: 0.5;
-      font-family: "Nunito", sans-serif;
-      color: rgb(188, 188, 188);
-    }
+        .rh-text-of {
+            font-size: 7vmin;
+            line-height: 0.05;
+            font-family: "Sacramento", sans-serif;
+            font-weight: 600;
+            padding-left: 10.5vmin;
+            z-index: 100;
+        }
 
-    .rh-text-of {
-      font-size: 7vmin;
-      line-height: 0.05;
-      font-family: "Sacramento", sans-serif;
-	  font-weight: 600;
-	  color: rgb(200, 30, 30);
-	  padding-left: 10.5vmin;
-	  z-index: 100;
-    }
+        .rh-text-content {
+            font-size: 10vmin;
+            line-height: 1;
+            font-family: "Anton", sans-serif;
+            color: rgb(248, 248, 248);
+        }
 
-    .rh-text-content {
-      font-size: 10vmin;
-      line-height: 1;
-      font-family: "Anton", sans-serif;
-      color: rgb(248, 248, 248);
-    }
+        .rh-text-simplicity {
+            font-size: 5vmin;
+            text-align: justify;
+            color: rgb(40, 40, 40);
+        }
 
-    .rh-text-simplicity {
-      font-family: "Nunito", sans-serif;
-      font-size: 5vmin;
-      text-align: justify;
-      color: rgb(40, 40, 40);
-    }
+        .rh-text-powerderby {
+            padding-top: 20vmin;
+            font-size: 2vmin;
+        }
 
-    .rh-text-powerderby {
-      padding-top: 20vmin;
-      font-family: sans-serif;
-      font-size: 2vmin;
-    }
+        .rh-text-content-wrapper {
+            text-align: center;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
 
-    .rh-text-content-wrapper {
-      text-align: center;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-between;
-    }
+        .rh-front {
+            z-index: 100;
+        }
 
-    .rh-front {
-      z-index: 100;
-    }
-  </style>
+        .rh-text-container {
+            background-color: rgb(06, 40, 70);
+        }
+
+        .rh-text-accent {
+            color: rgb(255, 30, 30);
+        }
+    </style>
 </head>
 
 <body>
-  <div class="container d-flex justify-content-center">
-    <div class="d-inline-block">
-      <div class="rh-text-hello px-5">hello</div>
-      <div style="background-color: rgb(50, 50, 50);" class="py-4">
-        <div class="d-inline-flex align-items-center px-5">
-          <div class="rh-text-enjoy d-inline-flex ">
-            enjoy
-          </div>
-          <div class="d-inline-flex ps-4">
-            <div class="d-inline-flex flex-column" style="padding-top: 3vmin;">
-              <div class="rh-text-void rh-text-content-wrapper">
-                <div class="rh-front">t</div>
-                <div class="rh-front">h</div>
-                <div class="rh-front">e</div>
-                <div>&nbsp;&nbsp;</div>
-                <div class="rh-front">V</div>
-                <div class="rh-front">O</div>
-                <div class="rh-front">I</div>
-                <div class="rh-front">D</div>
-              </div>
-              <div class="rh-text-of">of</div>
-              <div class="rh-text-content">
-                content
-              </div>
+    <div class="container d-flex justify-content-center">
+        <div class="d-inline-block">
+            <div class="rh-text-hello px-5">hello</div>
+            <div class="rh-text-container py-4">
+                <div class="d-inline-flex align-items-center px-5">
+                    <div class="rh-text-enjoy d-inline-flex ">
+                        enjoy
+                    </div>
+                    <div class="d-inline-flex ps-4">
+                        <div class="d-inline-flex flex-column" style="padding-top: 3vmin;">
+                            <div class="rh-text-void rh-text-content-wrapper">
+                                <div class="rh-front">t</div>
+                                <div class="rh-front">h</div>
+                                <div class="rh-front">e</div>
+                                <div>&nbsp;&nbsp;</div>
+                                <div class="rh-front">V</div>
+                                <div class="rh-front">O</div>
+                                <div class="rh-front">I</div>
+                                <div class="rh-front">D</div>
+                            </div>
+                            <div class="rh-text-of rh-text-accent">of</div>
+                            <div class="rh-text-content">
+                                content
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="rh-text-simplicity rh-text-content-wrapper px-5">
+                <div>e</div>
+                <div>m</div>
+                <div>b</div>
+                <div>r</div>
+                <div>a</div>
+                <div>c</div>
+                <div>e</div>
+                <div>&nbsp;&nbsp;</div>
+                <div>s</div>
+                <div>i</div>
+                <div>m</div>
+                <div>p</div>
+                <div>l</div>
+                <div>i</div>
+                <div>c</div>
+                <div>i</div>
+                <div>t</div>
+                <div>y</div>
+            </div>
+            <div class="rh-text-powerderby px-5 text-center">
+                Copyright &copy; 2024 - Powered by <span class="fw-bolder">HAMMERSTEIN</span>.sk
+            </div>
         </div>
-      </div>
-      <div class="rh-text-simplicity rh-text-content-wrapper px-5">
-        <div>e</div>
-        <div>m</div>
-        <div>b</div>
-        <div>r</div>
-        <div>a</div>
-        <div>c</div>
-        <div>e</div>
-        <div>&nbsp;&nbsp;</div>
-        <div>s</div>
-        <div>i</div>
-        <div>m</div>
-        <div>p</div>
-        <div>l</div>
-        <div>i</div>
-        <div>c</div>
-        <div>i</div>
-        <div>t</div>
-        <div>y</div>
-      </div>
-      <div class="rh-text-powerderby px-5 text-center">
-        powered by <span class="fw-bolder">HAMMERSTEIN</span>.sk &copy;2024
-      </div>
     </div>
-  </div>
 </body>
 
 </html>
